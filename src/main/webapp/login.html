@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - Guardian Care</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #d0bdf4;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .login-container {
+      background: white;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+      width: 100%;
+      max-width: 380px;
+      text-align: center;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    .login-container h1 {
+      margin-bottom: 25px;
+      color: #0077cc;
+      font-size: 28px;
+    }
+
+    .login-container input[type="text"],
+    .login-container input[type="password"] {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 16px;
+      outline: none;
+      transition: border 0.3s;
+    }
+
+    .login-container input[type="text"]:focus,
+    .login-container input[type="password"]:focus {
+      border-color: #0077cc;
+    }
+
+    .login-container input[type="submit"] {
+      width: 100%;
+      padding: 12px;
+      background: #0077cc;
+      border: none;
+      border-radius: 8px;
+      font-size: 18px;
+      color: white;
+      cursor: pointer;
+      margin-top: 15px;
+      transition: background 0.3s;
+    }
+
+    .login-container input[type="submit"]:hover {
+      background: #005fa3;
+    }
+
+    .login-container p {
+      margin-top: 20px;
+      font-size: 14px;
+      color: #333;
+    }
+
+    .login-container a {
+      color: #0077cc;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .login-container a:hover {
+      text-decoration: underline;
+    }
+
+    /* Animation */
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(-20px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <h1>Login</h1>
+    <form method="POST" action="login">
+      <input type="text" name="user_name" placeholder="Enter Your Name" required>
+      <input type="password" name="user_password" placeholder="Enter Your Password" required>
+      <input type="submit" value="Login">
+    </form>
+    <p>New user? <a href="user_infomaction">Register Here</a></p>
+  </div>
+</body>
+</html>

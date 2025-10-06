@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Guardian Care - Home</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f9f9f9;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    /* Navbar styling */
+    .navbar {
+      background: linear-gradient(90deg, #005fa3, #0077cc);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 12px 30px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .navbar .logo {
+      display: flex;
+      align-items: center;
+    }
+
+    .navbar .logo img {
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+
+    .navbar .logo span {
+      color: white;
+      font-size: 22px;
+      font-weight: bold;
+    }
+
+    .navbar .nav-links {
+      display: flex;
+      gap: 20px;
+    }
+
+    .navbar .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+      padding: 8px 15px;
+      transition: 0.3s;
+      border-radius: 5px;
+    }
+
+    .navbar .nav-links a:hover {
+      background-color: rgba(255, 255, 255, 0.2);
+      transform: scale(1.05);
+    }
+
+    /* Hero Section */
+    .hero {
+      background: url('images/indexing.png	');
+      color: white;
+      text-align: center;
+      padding: 100px 20px;
+      animation: fadeIn 1.2s ease-in-out;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      margin-bottom: 20px;
+      text-shadow: 2px 2px 6px rgba(0,0,0,0.6);
+    }
+
+    .hero p {
+      font-size: 20px;
+      max-width: 700px;
+      margin: 0 auto;
+      line-height: 1.6;
+      text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
+    }
+
+    /* About Section */
+    .about {
+      background: linear-gradient(135deg, #f0f8ff, #e6f7ff);
+      padding: 70px 20px;
+    }
+
+    .about-container {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 40px;
+    }
+
+    .about-text {
+      flex: 1 1 55%;
+      animation: fadeInLeft 1s ease-in-out;
+    }
+
+    .about-text h2 {
+      font-size: 36px;
+      margin-bottom: 20px;
+      color: #0077cc;
+    }
+
+    .about-text p {
+      font-size: 18px;
+      line-height: 1.8;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    .about-img {
+      flex: 1 1 40%;
+      text-align: center;
+      animation: fadeInRight 1s ease-in-out;
+    }
+
+    .about-img img {
+      width: 100%;
+      max-width: 420px;
+      border-radius: 18px;
+      box-shadow: 0 8px 22px rgba(0,0,0,0.25);
+      transition: transform 0.3s ease;
+    }
+
+    .about-img img:hover {
+      transform: scale(1.05);
+    }
+
+    /* Footer */
+    .footer {
+      background: linear-gradient(90deg, #005fa3, #0077cc);
+      color: white;
+      text-align: center;
+      padding: 20px 10px;
+      margin-top: auto;
+      font-size: 14px;
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+
+    @keyframes fadeInLeft {
+      from {opacity: 0; transform: translateX(-40px);}
+      to {opacity: 1; transform: translateX(0);}
+    }
+
+    @keyframes fadeInRight {
+      from {opacity: 0; transform: translateX(40px);}
+      to {opacity: 1; transform: translateX(0);}
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <div class="navbar">
+    <div class="logo">
+      <img src="images/logo.png" alt="Guardian Care logo">
+      <span>Guardian Care</span>
+    </div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="index.html">About</a>
+      <a href="contact.html">Contact Us</a>
+      <a href="login.html">Login</a>
+    </div>
+  </div>
+
+  <!-- Hero Section -->
+  <div class="hero">
+    <h1>WELCOME TO GUARDIAN CARE</h1>
+    <p>
+      Your trusted partner while you are abroad. From car maintenance to pet care and house cleaning, 
+      Guardian Care ensures your home and personal needs are taken care of by trusted professionals.
+    </p>
+  </div>
+
+  <!-- About Section -->
+  <section class="about">
+    <div class="about-container">
+      <div class="about-text">
+        <h2>About Guardian Care</h2>
+        <p>
+          Guardian Care is designed for people who travel abroad for a long time (6 to 12 months). 
+          While they are away, our system makes sure that important things like car maintenance, 
+          pet care, house cleaning, and plant watering are handled by trusted local service providers.
+        </p>
+        <p>
+          Users can log in, add their details, and book the services they need. They can also set 
+          their travel start and end dates to ensure everything runs smoothly while they are away. 
+          Service providers can view their assigned tasks and update the status once they complete 
+          them, while administrators oversee and manage all services.
+        </p>
+        <p>
+          Our mission is simple — to give you peace of mind during your time abroad by making sure 
+          your home and personal needs are handled with care and reliability.
+        </p>
+      </div>
+      <div class="about-img">
+        <img src="images/indexabout.png" alt="Guardian Care illustration">
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <div class="footer">
+    <p>© 2025 Guardian Care | All Rights Reserved</p>
+  </div>
+</body>
+</html>
